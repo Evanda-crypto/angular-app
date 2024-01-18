@@ -17,4 +17,12 @@ export class RegionComponent {
       console.warn(response);
     })
   }
+
+  onUpdate(data:any){
+    this.http.patch('http://localhost:3000/region/1',data).subscribe((response)=>{
+
+    console.log(response);
+    });
+  }
+
 }
