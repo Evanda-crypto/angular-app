@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-region',
@@ -8,21 +9,38 @@ import { Component } from '@angular/core';
 })
 export class RegionComponent {
 
+  regions: any = [];
+
   constructor(private http: HttpClient) { }
 
+
+  ngOnInit(): void {
+    this.getRegions().subscribe(
+      (data: any) => {
+        this.regions = data.list;
+      },
+      (error) => {
+        console.error('Error fetching regions:', error);
+      }
+    );
+  }
 
   onSubmit(data: any) {
 
     this.http.post('http://localhost:3000/region', data).subscribe((response) => {
-      console.warn(response);
+      this.getRegions().subscribe((data:any)=>{
+        this.regions = data.list;
+      });
     })
   }
 
-  onUpdate(data:any){
-    this.http.patch('http://localhost:3000/region/1',data).subscribe((response)=>{
 
-    console.log(response);
-    });
+  getRegions(): Observable<any[]> {
+    return this.http.get<any[]>('http://localhost:3000/region');
   }
 
+  deleteRegion(){
+    
+
+  }    
 }

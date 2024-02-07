@@ -37,7 +37,39 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+            "src/assets/admin/js/core.js",
+            "src/assets/admin/js/flatpickr.min.js",
+            "src/assets/admin/js/apexcharts.min.js",
+            "src/assets/admin/js/jquery.dataTables.js",
+            "src/assets/admin/js/dataTables.bootstrap5.js",
+            "src/assets/admin/js/jquery.validate.min.js",
+            "src/assets/admin/js/bootstrap-maxlength.min.js",
+            "src/assets/admin/js/jquery.inputmask.min.js",
+            "src/assets/admin/js/select2.min.js",
+            "src/assets/admin/js/typeahead.bundle.min.js",
+            "src/assets/admin/js/jquery.tagsinput.min.js",
+            "src/assets/admin/js/dropzone.min.js",
+            "src/assets/admin/js/dropify.min.js",
+            "src/assets/admin/js/pickr.min.js",
+            "src/assets/admin/js/moment.min.js",
+            "src/assets/admin/js/form-validation.js",
+            "src/assets/admin/js/bootstrap-maxlength.js",
+            "src/assets/admin/js/inputmask.js",
+            "src/assets/admin/js/select2.js",
+            "src/assets/admin/js/typeahead.js",
+            "src/assets/admin/js/tags-input.js",
+            "src/assets/admin/js/dropzone.js",
+            "src/assets/admin/js/dropify.js",
+            "src/assets/admin/js/pickr.js",
+            "src/assets/admin/js/flatpickr.js",
+            "src/assets/admin/js/feather.min.js",
+            "src/assets/admin/js/template.js",
+            "src/assets/admin/js/dashboard-dark.js",
+            "src/assets/admin/js/data-table.js",
+            "src/assets/admin/js/jquery.steps.min.js",
+            "src/assets/admin/js/wizard.js"
+            ]
           },
           "configurations": {
             "production": {

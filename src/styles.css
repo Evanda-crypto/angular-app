@@ -1,2 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import "../src/assets/admin/css/core.css";
+@import "../src/assets/admin/css/select2.min.css";
+@import "../src/assets/admin/css/jquery.tagsinput.min.css";
+@import "../src/assets/admin/css/dropzone.min.css";
+@import "../src/assets/admin/css/dropify.min.css";
+@import "../src/assets/admin/css/classic.min.css";
+@import "../src/assets/admin/css/font-awesome.min.css";
+@import "../src/assets/admin/css/dataTables.bootstrap5.css";
+@import "../src/assets/admin/css/jquery.steps.css";
+@import "../src/assets/admin/css/flatpickr.min.css";
+@import "../src/assets/admin/css/iconfont.css";
+@import "../src/assets/admin/css/flag-icon.min.css";
+@import "../src/assets/admin/css/style.min.css";

@@ -6,7 +6,7 @@
  * (c) 2016 - Jeremy FAGIS <jeremy@fagis.fr> (http://fagis.fr)
  * =============================================================
  */
-@font-face {
+/* @font-face {
     font-family: dropify;
     src: url(../fonts/dropify.eot);
     src: url(../fonts/dropify.eot#iefix) format("embedded-opentype"),
@@ -15,7 +15,7 @@
         url(../fonts/dropify.svg#dropify) format("svg");
     font-weight: 400;
     font-style: normal;
-}
+} */
 .dropify-font:before,
 .dropify-wrapper .dropify-message span.file-icon:before,
 .dropify-wrapper
