@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <a [href]="" class="btn btn-info">Navigate</a>
+                        <a routerLink="/dashboard" class="btn btn-info">Navigate</a>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
@@ -25,6 +25,9 @@
                     </div>
                     
                     <div class="col">
+                        <div *ngIf="message" class="alert alert-success" role="alert">
+                            {{actualMessage}}
+                          </div>
 
                         <form #region="ngForm" (ngSubmit)="onSubmit(region.value)">
                             <div class="form-group">

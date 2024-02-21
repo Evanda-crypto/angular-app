@@ -10,25 +10,25 @@
                                 <div class="auth-form-wrapper px-4 py-5">
                                     <a href="#" class="noble-ui-logo d-block mb-2"></a>
                                     <h5 class="text-muted fw-normal mb-4">Welcome back! Log in to your account.</h5>
-                                    <form class="forms-sample">
+                                    <form class="forms-sample" #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" >
                                         <div class="mb-3">
                                             <label for="userEmail" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="userEmail" placeholder="Email">
+                                            <input type="email" class="form-control" name="username" ngModel  id="userEmail" placeholder="Email">
                                         </div>
                                         <div class="mb-3">
                                             <label for="userPassword" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="userPassword"
-                                                autocomplete="current-password" placeholder="Password">
+                                            <input type="password" name="password" class="form-control" id="userPassword"
+                                                autocomplete="current-password" ngModel placeholder="Password">
                                         </div>
                                         <div class="form-check mb-3">
-                                            <input type="checkbox" class="form-check-input" id="authCheck">
+                                            <input type="checkbox"  name="check" ngModel  class="form-check-input" id="authCheck">
                                             <label class="form-check-label" for="authCheck">
                                                 Remember me
                                             </label>
                                         </div>
                                         <div>
-                                            <a routerLink="/dashboard"
-                                                class="btn btn-primary me-2 mb-2 mb-md-0 text-white">Login</a>
+                                            <button type="submit"
+                                                class="btn btn-primary me-2 mb-2 mb-md-0 text-white">Login</button>
                                             <button type="button"
                                                 class="btn btn-outline-primary btn-icon-text mb-2 mb-md-0">
                                                 <i class="btn-icon-prepend" data-feather="twitter"></i>

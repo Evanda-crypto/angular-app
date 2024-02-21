@@ -11,6 +11,9 @@ export class RegionComponent {
 
   regions: any = [];
 
+  message = false;
+  actualMessage:  string = '';
+
   constructor(private http: HttpClient) { }
 
 
@@ -29,6 +32,8 @@ export class RegionComponent {
 
     this.http.post('http://localhost:3000/region', data).subscribe((response) => {
       this.getRegions().subscribe((data:any)=>{
+        this.message = true;
+        this.actualMessage = 'New Region Created!';
         this.regions = data.list;
       });
     })
